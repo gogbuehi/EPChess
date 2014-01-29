@@ -1,0 +1,84 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Escher Plane Chess</title>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/EPC/Player.js"></script>
+        <script type="text/javascript" src="js/EPC/Piece.js"></script>
+        <script type="text/javascript" src="js/EPC/Quadrant.js"></script>
+        <script type="text/javascript" src="js/EPC/Space.js"></script>
+        <script type="text/javascript" src="js/EPC/Rules.js"></script>
+        <script type="text/javascript" src="js/EPC/UX.js"></script>
+        <script type="text/javascript" src="js/EscherPlaneChess.js"></script>
+        
+        <style type="text/css">
+            td {
+                border:solid 1px black;
+                width:50px;
+                height:50px;
+                text-align:center;
+            }
+            .player_0 {
+                background-color: darkblue;
+                color:white;
+            }
+            .player_1 {
+                background-color: darkgoldenrod;
+                color:black;
+            }
+            .player_2 {
+                background-color: darkred;
+                color:white;
+            }
+            .possible {
+                background-color:black;
+                color:yellow;
+            }
+            .selected_player {
+                background-color: yellow;
+                border:solid 1px black;
+            }
+            
+            .template {
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="players_list">
+            <li class="players_template template player"></li>
+        </ul>
+        <div class="selected_piece">--</div>
+        <table class="quadrant_template quadrant template">
+            <tr class="row0">
+                <td class="col0">--</td>
+                <td class="col1">--</td>
+                <td class="col2">--</td>
+                <td class="col3">--</td>
+            </tr>
+            <tr class="row1">
+                <td class="col0">--</td>
+                <td class="col1">--</td>
+                <td class="col2">--</td>
+                <td class="col3">--</td>
+            </tr>
+            <tr class="row2">
+                <td class="col0">--</td>
+                <td class="col1">--</td>
+                <td class="col2">--</td>
+                <td class="col3">--</td>
+            </tr>
+            <tr class="row3">
+                <td class="col0">--</td>
+                <td class="col1">--</td>
+                <td class="col2">--</td>
+                <td class="col3">--</td>
+            </tr>
+        </table>
+    </body>
+</html>
